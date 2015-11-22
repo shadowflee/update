@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<demonsaw version="2">
+	<view>
+		<option>true</option>
+		<toolbar>true</toolbar>
+		<menubar>true</menubar>
+		<detail>true</detail>
+	</view>
+	<clients/>
+	<routers>
+		<router enabled="true">
+			<name>PI_DS_router</name>
+			<address>0.0.0.0</address>
+			<port>1337</port>
+			<max>
+				<threads>16</threads>
+				<transfers>128</transfers>
+			</max>
+			<timeout>
+				<socket>5000</socket>
+				<client>600000</client>
+				<transfer>600000</transfer>
+			</timeout>
+			<transfer>
+				<size>786432</size>
+				<buffer>7864320</buffer>
+				<drift>7864320</drift>
+			</transfer>
+			<feature>
+				<search>true</search>
+				<browse>true</browse>
+				<chat>true</chat>
+				<transfer>true</transfer>
+			</feature>
+		</router>
+	</routers>
+</demonsaw>
